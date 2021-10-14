@@ -30,6 +30,7 @@ Once you create a .mcss file, residing either on an external URL or stored local
 ### Gradle Package Manager:
 
 1.  En tu proyecto de Android Studio abre el archivo build.gradle del proyecto, agrega el siguiente el siguiente fragmento de codigo:
+
 		allprojects {
 			repositories {
 				maven { url 'https://jitpack.io' }
@@ -37,10 +38,12 @@ Once you create a .mcss file, residing either on an external URL or stored local
 		}
 
 2.  Abre el archivo build.gradle del modulo, agrega el siguiente el siguiente fragmento de codigo:
+
 		dependencies {
 			implementation 'com.github.MCSSLIB : MCSS-ANDROID:1.0.0'
 		}    ```
 Si tu proyecto usa legacy debes importar la libreria de android support de MCSS:
+
 		dependencies {
 			implementation 'com.android.support:design : 28.0.0'
 			implementation 'com.github.MCSSLIB : com.github.MCSSLIB:MCSS-ANDROID-LEGACY : 1.0.0'
@@ -60,6 +63,7 @@ Si tu proyecto usa legacy debes importar la libreria de android support de MCSS:
 2. Copia la libreria mcss-android-release.aar que acabas de descargar en la carpeta libs.
 
 3.  En tu proyecto de Android Studio abre el archivo build.gradle del proyecto, agrega el siguiente el siguiente fragmento de codigo:
+
 		allprojects {
 			repositories {
 				flatDir {
@@ -69,6 +73,7 @@ Si tu proyecto usa legacy debes importar la libreria de android support de MCSS:
 		}
 
 4.  Abre el archivo build.gradle del modulo, agrega el siguiente el siguiente fragmento de codigo:
+
 		dependencies {
 			implementation files('libs/mcss-android-release.aar')
 		}  
